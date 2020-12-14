@@ -1,3 +1,7 @@
 <p>image-upload works!</p>
-<input type="file" >
-<button type="button" (click)="uploadImage()"> upload </button>
+<!-- <input type="file" >
+<button type="button" (click)="uploadImage()"> upload </button> -->
+<img [src]="url" height="200"> <br/>
+<input type='file' (change)="onSelectFile($event)">
+
+<button *ngIf="url" routerLink="/imgDetail">go to 2nd page</button>

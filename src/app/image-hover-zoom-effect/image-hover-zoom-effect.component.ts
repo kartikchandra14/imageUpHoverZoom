@@ -10,6 +10,7 @@ export class ImageHoverZoomEffectComponent implements OnInit {
   constructor() { }
   urlImg = 'https://images-na.ssl-images-amazon.com/images/I/61stQYWQO4L._SY450_.jpg';
   ngOnInit(): void {
+    // this.urlImg = localStorage.getItem('imgSrc');
     this.imageZoom('myimage', 'myresult');
   }
 

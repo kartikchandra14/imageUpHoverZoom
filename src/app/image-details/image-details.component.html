@@ -1,1 +1,14 @@
 <p>image-details works!</p>
+<br><br>
+<br><br>
+<img *ngIf="src" [src]="src" height="200"> 
+<br/>
+
+<p *ngIf="imgInfo?.name">image Name : {{imgInfo?.name}}</p>
+<p *ngIf="imgInfo?.size">image Size : {{imgInfo?.size / 1024 }} KB</p>
+<br><br>
+
+<p *ngIf="!src">no image info found </p>
+<br><br>
+
+<button *ngIf="src" routerLink="/imgHover"> hover image zoom functionality => </button>
