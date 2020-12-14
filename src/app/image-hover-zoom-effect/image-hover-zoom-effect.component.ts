@@ -28,7 +28,7 @@ export class ImageHoverZoomEffectComponent implements OnInit {
     cy = result.offsetHeight / lens.offsetHeight;
     /* Set background properties for the result DIV */
     // console.log('imageZoom1', img, img.src);
-    // console.log('imageZoom2', cx, img.width, img.height);
+    console.log('imageZoom2', cx, img.width, img.height);
     result.style.backgroundImage = 'url(\'' + img.src + '\')';
     result.style.backgroundSize = (img.width * cx) + 'px ' + (img.height * cy) + 'px';
     /* Execute a function when someone moves the cursor over the image, or the lens: */
